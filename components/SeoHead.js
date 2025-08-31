@@ -1,11 +1,13 @@
 // SEO meta tags
 // Replace title, description, url, image per page
+import Head from "next/head";
+
 export default function SeoHead({ title, description, url, image, keywords }) {
   return (
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />   {/* Add keywords here */}
+      <meta name="keywords" content={keywords} /> {/* Add page keywords here */}
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href={url} />
 
