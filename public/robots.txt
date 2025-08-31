@@ -1,1 +1,7 @@
 # Robots file - replace sitemap URL with your site
+# Allow all crawlers
+User-agent: *
+Disallow:
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
